@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Schedule</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+   <div class="mainview">
+     <header>
+      <h1>Ruby on Rails スケジュール管理アプリ</h1>
+     </header>
+     <%= yield %>
+     <footer>
+      <% require 'date' 
+         date = DateTime.now %>
+      <h1>現在の日時:<%= p date.strftime("%Y年%m月%d日") %>   スケジュール合計：<%= User.count %></h1>
+     </footer>
+   </div>
+  </body>
+</html>

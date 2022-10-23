@@ -1,0 +1,84 @@
+body{
+  margin: 0;
+  padding:0;
+}
+
+header {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: #CC0000;
+  color: white;
+}
+
+.error {
+  border: 1px solid red;
+  padding: 15px;
+  color: black;
+}
+
+.mainview{
+  min-height: 100vh;
+  position: relative;
+}
+
+footer{
+  width: 100%;
+  padding: 15px 15px 0px;
+  margin-top: 30px;
+  background-color: #CC0000;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+table,h3,p{
+  padding-left: 20px;
+}
+
+ul{
+  list-style: none;
+}
+
+table th {
+  background-color: #FFCCCC;
+  padding: 10px 20px;
+}
+
+table td {
+  background-color: #FFDBC9;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.notice {
+  background-color: #ccf;
+  padding: 5px;
+}
+
+form input[type=text] {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 32px;
+  padding: 3px 10px;
+  font-size: 16px;
+}
+
+#user_memo{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  padding: 3px 10px;
+  font-size: 16px;
+}
+
+form input[type=date] {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 32px;
+  padding: 3px 10px;
+  font-size: 16px;
+}
